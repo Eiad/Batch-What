@@ -53,16 +53,14 @@ To run this application locally, follow these steps:
     http://localhost:3000
     ```
 
-## Technologies Used
+## Technologies Used q
 
 - **Next.js**: React framework for building web applications.
 - **React**: JavaScript library for building user interfaces.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **gh-pages**: npm package for deploying to GitHub Pages.
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome!
 
 ## License
 
