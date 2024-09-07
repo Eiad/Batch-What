@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Batch WhatsApp Sender Tool
 
-## Getting Started
+![Logo](public/assets/batchwhat-logo-nobg-sm.png)
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Batch WhatsApp Sender Tool is a web application designed to help users send WhatsApp messages to multiple contacts quickly and efficiently. Perfect for businesses, marketers, and individuals, this tool allows you to save time by automating the process of sending messages in bulk.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Bulk Messaging**: Send WhatsApp messages to multiple contacts with ease.
+- **Easy to Use**: User-friendly interface that requires no technical skills.
+- **Secure**: Your data is safe; no information is stored.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Use
 
-## Learn More
+1. **Paste your list of phone numbers**: Enter the phone numbers separated by commas or new lines.
+2. **Click "Submit"**: Generate a list of numbers with individual "Send" buttons.
+3. **Click "Send"**: Open a new WhatsApp message for each number directly from the app.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this application locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+    ```bash
+    git clone https://github.com/Eiad/batchwhat.git
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    cd batchwhat
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+4. Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+5. Open your browser and visit:
+
+    ```
+    http://localhost:3000
+    ```
+
+## Deployment
+
+This application is deployed on GitHub Pages. To deploy manually, follow these steps:
+
+1. Build and export the application:
+
+    ```bash
+    npm run deploy
+    ```
+
+2. Your application will be available at:
+
+    ```
+    https://eiad.github.io/batchwhat
+    ```
+
+## Technologies Used
+
+- **Next.js**: React framework for building web applications.
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **gh-pages**: npm package for deploying to GitHub Pages.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
+
+## Acknowledgments
+
+- [WhatsApp API](https://www.whatsapp.com/) for enabling message sending.
+- [Next.js Documentation](https://nextjs.org/docs) for guidance on building React applications.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) for styling references.
+
+---
+
+© [Current Year] Batch WHAT! All rights reserved.
