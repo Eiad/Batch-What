@@ -65,7 +65,7 @@ const SendWhatsApp = () => {
                         <p>
                             Start sending WhatsApp messages in bulk to grow your business and reach more customers. Our tool is designed to save you time and help you communicate more effectively.
                         </p>
-                        <a href="#" className="cta-button">Try It Now!</a>
+                        <button onClick={() => document.getElementById('phone-numbers-textarea').focus()} className="cta-button">Try It Now!</button>
                     </section>
                 </main>
 

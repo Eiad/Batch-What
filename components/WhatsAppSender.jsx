@@ -31,6 +31,7 @@ const WhatsAppSender = () => {
     return (
         <div className="whatsapp-sender">
             <textarea
+                id="phone-numbers-textarea"
                 placeholder="Paste phone numbers separated by commas or new lines"
                 value={phoneNumbers}
                 onChange={handleInputChange} // Updated handler to filter input

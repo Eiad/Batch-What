@@ -247,6 +247,10 @@ body {
     cursor: not-allowed;
 }
 
+.cta-button {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .header-title {
         font-size: 22px;
