@@ -47,26 +47,10 @@ To run this application locally, follow these steps:
     npm run dev
     ```
 
-5. Open your browser and visit:
+5. Open browser and visit:
 
     ```
     http://localhost:3000
-    ```
-
-## Deployment
-
-This application is deployed on GitHub Pages. To deploy manually, follow these steps:
-
-1. Build and export the application:
-
-    ```bash
-    npm run deploy
-    ```
-
-2. Your application will be available at:
-
-    ```
-    https://eiad.github.io/batchwhat
     ```
 
 ## Technologies Used
@@ -80,26 +64,8 @@ This application is deployed on GitHub Pages. To deploy manually, follow these s
 
 Contributions are welcome! Please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
-
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
-
-## Acknowledgments
-
-- [WhatsApp API](https://www.whatsapp.com/) for enabling message sending.
-- [Next.js Documentation](https://nextjs.org/docs) for guidance on building React applications.
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) for styling references.
-
----
+This project is licensed under the MIT License.
 
 © 2024 Batch WHAT! All rights reserved.
