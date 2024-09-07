@@ -6,6 +6,12 @@ const WhatsAppSender = () => {
     const [numbersList, setNumbersList] = useState([]);
     const [sentNumbers, setSentNumbers] = useState({});
 
+    const handleInputChange = (e) => {
+        // Filter input to only allow numbers, spaces, commas, new lines, and "+" characters
+        const filteredInput = e.target.value.replace(/[^\d,+\s\n]/g, '');
+        setPhoneNumbers(filteredInput);
+    };
+
     const handleSubmit = () => {
         if (!phoneNumbers) return;
 
@@ -27,13 +33,20 @@ const WhatsAppSender = () => {
             <textarea
                 placeholder="Paste phone numbers separated by commas or new lines"
                 value={phoneNumbers}
-                onChange={(e) => setPhoneNumbers(e.target.value)}
+                onChange={handleInputChange} // Updated handler to filter input
                 rows={6}
                 className="whatsapp-sender__textarea"
             />
             <button onClick={handleSubmit} className="whatsapp-sender__button">
                 Submit
             </button>
+
+            {/* Display the total number of extracted numbers */}
+            {numbersList.length > 0 && (
+                <div className="whatsapp-sender__count">
+                    Total Numbers Extracted: {numbersList.length}
+                </div>
+            )}
 
             {numbersList.length > 0 && (
                 <ul className="whatsapp-sender__list">
