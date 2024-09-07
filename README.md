@@ -102,4 +102,4 @@ For any questions or inquiries, please contact [your-email@example.com](mailto:y
 
 ---
 
-© [Current Year] Batch WHAT! All rights reserved.
+© 2024 Batch WHAT! All rights reserved.
