@@ -58,6 +58,7 @@ To run this application locally, follow these steps:
 - **Next.js**: React framework for building web applications.
 - **React**: JavaScript library for building user interfaces.
 
+
 ## Contributing
 
 Contributions are welcome!
