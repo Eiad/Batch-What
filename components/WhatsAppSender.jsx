@@ -16,7 +16,7 @@ const WhatsAppSender = () => {
         if (!phoneNumbers) return;
 
         const numbersArray = phoneNumbers.split(/[\n,]+/).map((num) => num.trim());
-        setNumbersList(numbersArray.filter((num) => num !== '')); // Exclude empty strings
+        setNumbersList(numbersArray.filter((num) => num !== ''));
     };
 
     const handleSend = (number) => {

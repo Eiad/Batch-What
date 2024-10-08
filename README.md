@@ -6,6 +6,8 @@
 
 Batch WhatsApp Sender Tool is a web application designed to help users send WhatsApp messages to multiple contacts quickly and efficiently. Perfect for businesses, marketers, and individuals, this tool allows you to save time by automating the process of sending messages in bulk.
 
+Visit the live application: [batchwhat.vercel.app](https://batchwhat.vercel.app)
+
 ## Features
 
 - **Bulk Messaging**: Send WhatsApp messages to multiple contacts with ease.
