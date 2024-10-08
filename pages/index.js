@@ -17,7 +17,7 @@ const SendWhatsApp = () => {
                     name="keywords"
                     content="WhatsApp sender, bulk WhatsApp sender, send WhatsApp messages, WhatsApp tool, automate WhatsApp, WhatsApp marketing"
                 />
-                <meta name="author" content="Batch WHAT!" />
+                <meta name="author" content="Ash" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta property="og:title" content="Send WhatsApp Messages Easily - Bulk WhatsApp Sender Tool" />
                 <meta
