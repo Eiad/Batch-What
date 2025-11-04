@@ -1,0 +1,155 @@
+.whatsappSender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--light-background-color);
+    box-shadow: var(--box-shadow);
+}
+
+.textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: var(--font-size-base);
+    resize: none;
+    margin-bottom: 15px;
+    box-shadow: var(--box-shadow);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(37, 211, 102, 0.3);
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.button {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.clearButton {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clearButton:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.sendAllButton {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 15px 0 10px 0;
+}
+
+.sendAllButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.errorMessage {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ffeaa7;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-height: 600px;
+    overflow: auto;
+    border: 3px dotted #f2f2f2;
+    background: #fcfcfc;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.count {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.number {
+    font-size: 14px;
+}
+
+.numberSent {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.sendButton {
+    padding: 5px 10px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.sendButton:hover:not(:disabled) {
+    background-color: var(--accent-color);
+}
+
+.sendButtonSent {
+    background-color: grey;
+    cursor: not-allowed;
+}

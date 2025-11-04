@@ -12,6 +12,20 @@
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #0a0a0a;
+        --light-background-color: #1a1a1a;
+        --secondary-color: #ededed;
+    }
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
@@ -20,6 +34,19 @@ body {
     padding: 0;
     color: var(--secondary-color);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .page-container {
@@ -127,6 +154,8 @@ body {
     font-size: var(--font-size-base);
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
 }
 
 .cta-button:hover {
@@ -146,111 +175,6 @@ body {
     margin: 0;
 }
 
-.whatsapp-sender {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: var(--light-background-color);
-    box-shadow: var(--box-shadow);
-}
-
-.whatsapp-sender__textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: var(--font-size-base);
-    resize: none;
-    margin-bottom: 15px;
-    box-shadow: var(--box-shadow);
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-sender__textarea:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 8px rgba(37, 211, 102, 0.3);
-}
-
-.whatsapp-sender__button {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: var(--font-size-base);
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.whatsapp-sender__button:hover {
-    background-color: var(--accent-color);
-}
-
-.whatsapp-sender__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-    width: 100%;
-    max-height: 600px;
-    overflow: scroll;
-    border: 3px dotted #f2f2f2;
-    background: #fcfcfc;
-}
-
-.whatsapp-sender__list-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
-
-.whatsapp-sender__count {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-    /* You can change the color as needed */
-}
-
-
-.whatsapp-sender__number {
-    font-size: 14px;
-}
-
-.whatsapp-sender__number--sent {
-    font-size: 14px;
-    text-decoration: line-through;
-    /* Strikethrough for sent numbers */
-}
-
-.whatsapp-sender__send-button {
-    padding: 5px 10px;
-    background-color: #25d366;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.whatsapp-sender__send-button--sent {
-    background-color: grey;
-    cursor: not-allowed;
-}
-
-.cta-button {
-    cursor: pointer;
-}
-
 @media (max-width: 768px) {
     .header-title {
         font-size: 22px;
@@ -267,5 +191,15 @@ body {
 
     .benefits-list li {
         flex: 1 1 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+
+    .benefits-list li {
+        background-color: #2a2a2a;
     }
 }

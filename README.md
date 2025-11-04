@@ -52,10 +52,10 @@ To run this application locally, follow these steps:
 5. Open browser and visit:
 
     ```
-    http://localhost:3000
+    http://localhost:3030
     ```
 
-## Technologies Used q
+## Technologies Used
 
 - **Next.js**: React framework for building web applications.
 - **React**: JavaScript library for building user interfaces.
